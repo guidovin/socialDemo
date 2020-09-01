@@ -3,10 +3,10 @@
 package-lock.json
 challengeLink.txt
 # production
-/build
+/dist
 .pem
-
 # misc
+src/access.log
 .env
 
 npm-debug.log*
