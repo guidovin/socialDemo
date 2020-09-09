@@ -1,6 +1,6 @@
 import users from "./users";
 
-function find(name: string) {
+function find(name?: string) {
   const checkName = new RegExp("[a-zA-Z]+", "i");
   if(!name) 
     return users;

@@ -13,5 +13,5 @@ type User {
 }
 
 type Query {
-  find(name: String): [User]
+  list(name: String): [User]
 }

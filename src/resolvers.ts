@@ -3,9 +3,9 @@ import db from "./dbMock/db"
 
 const resolvers: IResolvers = {
   Query: {
-    find: async (_, args, { }) => {
-      let { name } = await args
-      const result = db.find(name);
+    list: async (_, args, { }) => {
+      let { name } = await args;
+      const result = name ? db.find(name) : db.find() ;
       return result ? result : [];
     }
   },
